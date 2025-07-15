@@ -36,7 +36,7 @@ const Viewstudent = () => {
                                             <div class="card h-100">
                                                 <div class="card-body">
                                                     <h5 class="card-title">{value.name}</h5>
-                                                    <h6 class="card-subtitle mb-2 text-body-secondary"><b>ID: </b>{value.id} <b>Roll No:</b>{value.roll_number}</h6>
+                                                    <h6 class="card-subtitle mb-2 text-body-secondary"><b>Roll No:</b>{value.roll_number}</h6>
                                                     <p class="card-text"><b>Admission No: </b>{value.admission_number}</p>
                                                     <p class="card-text"><b>College: </b>{value.college}</p>
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Nav from './Nav'
+import axios from 'axios'
 
 const Addstudent = () => {
     const [input, xinput] = useState(
@@ -15,6 +16,11 @@ const Addstudent = () => {
     }
     const readvalues=()=>{
         console.log(input)
+        axios.post("http://18.144.111.41/student_api.php",input).then(
+            (res)=>{
+                alert("Successfully Added")
+            }
+        ).catch()
     }
     return (
         <div style={{
